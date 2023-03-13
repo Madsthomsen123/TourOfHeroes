@@ -24,7 +24,7 @@ public class Ui : IUi, IObserver
 
     public Ui(Controller controller, Screen? screen, ILog log, IScreenFactory screenFactory)
     {
-        Screen = screen;
+        Screen = screen!;
         ScreenFactory = screenFactory;
         _controller = controller;
         _log = log;
